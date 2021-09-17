@@ -1,0 +1,21 @@
+section{
+  background-color: aliceblue;
+  height: 100%;
+  img{
+    width: 100px;
+  }
+  h1{
+    color: #53565a;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  h2{
+    font-size: 16px;
+    strong{
+      color: #2375f0;
+    }
+  }
+  .select-profile{
+    cursor: pointer;
+  }
+}

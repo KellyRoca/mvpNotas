@@ -1,0 +1,37 @@
+<section fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+  <div class="student-data">
+    <img src="/assets/images/estudiante_base.png" alt="imagen del estudiante">
+    <div>
+      <p>Código: {{this.student?.Codigo}}</p>
+      <p>Nombres y Apellidos: {{this.student['Nombre y Apellido']}}</p>
+    </div>
+    <p>I.E. N°112 Héroes de La Breña</p>
+  </div>
+  <div class="container-ratings">
+    <h2>REPORTE DE NOTAS I BIMESTRE</h2>
+    <mat-card>
+      <table>
+        <thead>
+          <tr>
+            <th>Curso</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Fisica</th>
+            <th>{{this.student?.Fisica}}</th>
+          </tr>
+          <tr>
+            <th>Matematicas</th>
+            <th>{{this.student?.Matematicas}}</th>
+          </tr>
+          <tr>
+            <th>Historia</th>
+            <th>{{this.student?.Historia}}</th>
+          </tr>
+        </tbody>
+      </table>
+    </mat-card>
+  </div>
+</section>

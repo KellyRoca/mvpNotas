@@ -1,0 +1,13 @@
+<section fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="30px">
+  <h1 class="title">Selecciona tu perfil</h1>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="40px">
+    <div class="select-profile" (click)="login()" fxLayout="column" fxLayoutAlign="center center">
+      <img src="/assets/images/profe.png" alt="profesor">
+      <h2>Soy <strong>profesor</strong></h2>
+    </div>
+    <div class="select-profile" (click)="login()" fxLayout="column" fxLayoutAlign="center center">
+      <img src="/assets/images/estudiante_base.png" alt="estudiante">
+      <h2>Soy <strong>estudiante</strong></h2>
+    </div>
+  </div>
+</section>
