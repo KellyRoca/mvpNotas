@@ -5,4 +5,20 @@ section{
   img{
     height: 100px;
   }
+  table{
+    width: 100%;
+    thead{
+      color: #2375f0;
+      font-weight: 600;
+      font-family: "Axiforma-Regular";
+    }
+    tbody{
+      color: black;
+      font-weight: 300;
+      font-family: "Axiforma-Regular";
+    }
+    th{
+      width: 50%;
+    }
+  }
 }

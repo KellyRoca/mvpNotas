@@ -10,7 +10,7 @@ export class ApiService {
     private http: HttpClient
   ) { }
 
-  url = 'https://64d4-161-132-234-179.ngrok.io/student/C01-1';
+  url = 'https://7a3f-161-132-234-179.ngrok.io/student/C01-1';
 
   getStudent(): Observable<any> {
     return this.http.get<any>(this.url, {

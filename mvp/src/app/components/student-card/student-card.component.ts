@@ -6,7 +6,8 @@ interface StudentData {
   Fisica: number;
   Historia: number;
   Matematicas: number;
-  "Nombre y Apellido": string;
+  Apellido: string;
+  Nombre: string;
 }
 
 interface Response {
@@ -22,22 +23,23 @@ export class StudentCardComponent implements OnInit {
 
   student!: StudentData;
   constructor(
-    // private apiService: ApiService,
+    private apiService: ApiService,
   ) { }
 
   ngOnInit(): void {
-    // this.apiService.getStudent().subscribe((res: Response) => {
-    //   this.student = res.student_data[0];
-    //   console.log(this.student)
-    // })
-
-    this.student = {
-      Codigo: 'CP-01',
-      Fisica: 12,
-      Historia: 14,
-      Matematicas: 16,
-      "Nombre y Apellido": "Susana Ramirez Torres"
-    }
+    this.apiService.getStudent().subscribe((res: Response) => {
+      this.student = res.student_data[0];
+    },
+      (error) => {
+        this.student = {
+          Apellido: "Lozano Chamorro",
+          Codigo: "C01-1",
+          Fisica: 14,
+          Historia: 19,
+          Matematicas: 15,
+          Nombre: "Gabriella Milagros "
+        }
+      })
   }
 
 }

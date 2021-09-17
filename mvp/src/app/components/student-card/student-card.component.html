@@ -1,9 +1,11 @@
-<section fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="10px">
+<section fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" fxLayoutGap="35px">
   <div class="student-data">
     <img src="/assets/images/estudiante_base.png" alt="imagen del estudiante">
     <div>
       <p>Código: {{this.student?.Codigo}}</p>
-      <p>Nombres y Apellidos: {{this.student['Nombre y Apellido']}}</p>
+      <p>Apellidos: {{this.student.Apellido}} <br>
+        Nombres: {{this.student.Nombre}}
+      </p>
     </div>
     <p>I.E. N°112 Héroes de La Breña</p>
   </div>
